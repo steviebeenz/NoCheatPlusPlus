@@ -161,7 +161,7 @@
 			<version>1.8-Девай-білдінг-v8</version>
 			<scope>забезпечено</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>

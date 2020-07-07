@@ -1,0 +1,43 @@
+---
+name: crwdns14572:0crwdne14572:0
+main: crwdns14574:0crwdne14574:0
+version: crwdns14576:0crwdne14576:0
+description: crwdns14578:0crwdne14578:0
+api-version: crwdns14580:0crwdne14580:0
+author: crwdns14582:0crwdne14582:0
+softdepend:
+  - crwdns14584:0crwdne14584:0
+  - crwdns14586:0crwdne14586:0
+  - crwdns14588:0crwdne14588:0
+  - crwdns14590:0crwdne14590:0
+  - crwdns14592:0crwdne14592:0
+  - crwdns14594:0crwdne14594:0
+  - crwdns14596:0crwdne14596:0
+  - crwdns14598:0crwdne14598:0
+  - crwdns14600:0crwdne14600:0
+  - crwdns14602:0crwdne14602:0
+  - crwdns14604:0crwdne14604:0
+commands:
+  NOPE:
+    usage: crwdns14606:0crwdne14606:0
+    aliases:
+      - crwdns14608:0crwdne14608:0
+      - crwdns14610:0crwdne14610:0
+      - crwdns14612:0crwdne14612:0
+permissions:
+  nope.*:
+    description: crwdns14614:0crwdne14614:0
+  nope.bypass.movement:
+    description: crwdns14616:0crwdne14616:0
+  nope.bypass.flight:
+    description: crwdns14618:0crwdne14618:0
+  "nope.bypass.movement.flight#4":
+    description: crwdns14620:0crwdne14620:0
+  nope.command.toggle.scoreboard:
+    description: crwdns14622:0crwdne14622:0
+  nope.command.toggle.gscoreboard:
+    description: crwdns14624:0crwdne14624:0
+  nope.command.testlag:
+    description: crwdns14626:0crwdne14626:0
+  nope.command.false:
+    description: crwdns14628:0crwdne14628:0

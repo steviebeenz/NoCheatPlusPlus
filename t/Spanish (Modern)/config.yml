@@ -183,27 +183,27 @@ Actions:
 #Commands are loaded and created in order. Define a custom command first before using it in another custom command.
 Commands:
   #log Logs to a file that the player failed a check, and logs in console every 5 seconds that they failed the check
-  flog: 'crwdns112:0%player%crwdnd112:0%debug%crwdnd112:0%vl%crwdnd112:0%player%crwdnd112:0%debug%crwdne112:0'
+  flog: "crwdns112:0%player%crwdnd112:0%debug%crwdnd112:0%vl%crwdnd112:0%player%crwdnd112:0%debug%crwdne112:0"
   #the below actions log ingame an appropriate warning message to staff
-  alog: 'crwdns114:0&c&crwdnd114:0%player%crwdnd114:0%check%crwdnd114:0%vl%crwdne114:0'
-  elog: 'crwdns116:0&c&crwdnd116:0%player%crwdnd116:0%check%crwdnd116:0%vl%crwdne116:0'
-  clog: 'crwdns118:0&c&crwdnd118:0%player%crwdnd118:0%check%crwdnd118:0%vl%crwdne118:0'
-  4log: 'crwdns120:0&c&crwdnd120:0%player%crwdnd120:0%check%crwdnd120:0%vl%crwdne120:0'
+  alog: "crwdns114:0&c&crwdnd114:0%player%crwdnd114:0%check%crwdnd114:0%vl%crwdne114:0"
+  elog: "crwdns116:0&c&crwdnd116:0%player%crwdnd116:0%check%crwdnd116:0%vl%crwdne116:0"
+  clog: "crwdns118:0&c&crwdnd118:0%player%crwdnd118:0%check%crwdnd118:0%vl%crwdne118:0"
+  4log: "crwdns120:0&c&crwdnd120:0%player%crwdnd120:0%check%crwdnd120:0%vl%crwdne120:0"
   #weblog Logs the action to the specified webhook (in this case flagExample)
   weblog: "crwdns122:0crwdne122:0"
   #basiclog combines all above log commands into 1 for simple usage
-  basiclog: 'crwdns124:0crwdne124:0'
+  basiclog: "crwdns124:0crwdne124:0"
   #logban Logs ingame that the player was banned both ingame and to a file
-  logban: 'crwdns126:0&c&crwdnd126:0%player%crwdnd126:0%check%crwdnd126:0%player%crwdnd126:0%debug%crwdnd126:0%vl%crwdne126:0'
+  logban: "crwdns126:0&c&crwdnd126:0%player%crwdnd126:0%check%crwdnd126:0%player%crwdnd126:0%debug%crwdnd126:0%vl%crwdne126:0"
   #ikick Kicks the player once every minute (to avoid constant kicking) in case they are stuck/otherwise false flagging
-  ikick: 'crwdns128:0crwdne128:0'
+  ikick: "crwdns128:0crwdne128:0"
   #lagkick Kicks the player if their ping is too high
-  lagkick: 'crwdns130:0crwdne130:0'
+  lagkick: "crwdns130:0crwdne130:0"
   #tpskick Kicks the player if the server's TPS is too low
-  tpskick: 'crwdns132:0crwdne132:0'
-  tpsdecrement: 'crwdns134:0crwdne134:0'
+  tpskick: "crwdns132:0crwdne132:0"
+  tpsdecrement: "crwdns134:0crwdne134:0"
   #rndcancel Has an 80% chance of teleporting the player back
-  rndcancel: 'crwdns136:0crwdne136:0'
+  rndcancel: "crwdns136:0crwdne136:0"
   canimate: "crwdns138:0%token%crwdne138:0"
   #cban Only bans the player if dev mode is disabled, it also logs the ban
   #We log the ban first so we can get the VL data first

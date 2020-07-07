@@ -17,7 +17,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -29,4 +28,3 @@
 hs_err_pid*
 
 # End of https://www.gitignore.io/api/java
-/target/

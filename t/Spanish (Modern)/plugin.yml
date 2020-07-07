@@ -3,7 +3,6 @@ name: crwdns14572:0crwdne14572:0
 main: crwdns14574:0crwdne14574:0
 version: crwdns14576:0crwdne14576:0
 description: crwdns14578:0crwdne14578:0
-api-version: crwdns14580:0crwdne14580:0
 author: crwdns14582:0crwdne14582:0
 softdepend:
   - crwdns14584:0crwdne14584:0

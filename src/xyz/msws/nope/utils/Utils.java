@@ -15,9 +15,17 @@ import javax.net.ssl.HttpsURLConnection;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
+import io.sentry.Sentry;
+import io.sentry.SentryClient;
+import io.sentry.SentryClientFactory;
+
 import xyz.msws.nope.NOPE;
 
 public class Utils {
+	private static SentryClient sentry;
+
+	
+
 	public static NOPE plugin;
 
 	private static Method getHandle;
@@ -26,6 +34,13 @@ public class Utils {
 	public static String nms;
 
 	static {
+		Sentry.init("https://a06b4d46e8624d0692f5ee3e1b56e9dd@o406895.ingest.sentry.io/5313682");
+
+		/*
+		 * It is possible to go around the static ``Sentry`` API, which means you are
+		 * responsible for making the SentryClient instance available to your code.
+		 */
+		sentry = SentryClientFactory.sentryClient();
 		try {
 			switch (Bukkit.getBukkitVersion().substring(0, Bukkit.getBukkitVersion().lastIndexOf("."))) {
 				case "1.13-R0":
@@ -57,6 +72,7 @@ public class Utils {
 			}
 		} catch (IndexOutOfBoundsException e) {
 			e.printStackTrace();
+			Sentry.capture(e);
 		}
 	}
 
@@ -75,6 +91,7 @@ public class Utils {
 		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException | NoSuchMethodException
 				| SecurityException | NoSuchFieldException e) {
 			e.printStackTrace();
+			Sentry.capture(e);
 		}
 		return 0;
 	}
@@ -147,6 +164,7 @@ public class Utils {
 			response = reader.readLine();
 		} catch (IOException e) {
 			e.printStackTrace();
+			Sentry.capture(e);
 		}
 
 		if (response == null)

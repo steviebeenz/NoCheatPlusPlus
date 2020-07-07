@@ -12,6 +12,11 @@ import java.util.concurrent.Callable;
 
 import com.rabbitcompany.adminbans.AdminBans;
 
+import io.sentry.Sentry;
+import io.sentry.SentryClient;
+import io.sentry.SentryClientFactory;
+
+
 import javax.annotation.Nullable;
 
 import org.bukkit.Bukkit;
@@ -69,6 +74,35 @@ import xyz.msws.nope.utils.Metrics.CustomChart;
  *
  */
 public class NOPE extends JavaPlugin {
+	private static SentryClient sentry;
+
+	public static void main(String... args) {
+		/*
+		 * It is recommended that you use the DSN detection system, which will check the
+		 * environment variable "SENTRY_DSN", the Java System Property "sentry.dsn", or
+		 * the "sentry.properties" file in your classpath. This makes it easier to
+		 * provide and adjust your DSN without needing to change your code. See the
+		 * configuration page for more information.
+		 * 
+		 * For example, using an environment variable
+		 * 
+		 * export SENTRY_DSN=
+		 * "https://327807c1697c48d0b5e5c26d6c11491d@o406895.ingest.sentry.io/5275597"
+		 */
+
+		// You can also manually provide the DSN to the ``init`` method.
+		Sentry.init("https://a06b4d46e8624d0692f5ee3e1b56e9dd@o406895.ingest.sentry.io/5313682");
+
+		/*
+		 * It is possible to go around the static ``Sentry`` API, which means you are
+		 * responsible for making the SentryClient instance available to your code.
+		 */
+		sentry = SentryClientFactory.sentryClient(); // Sentry.capture(e);
+
+		NOPE myClass = new NOPE();
+		// myClass.logWithInstanceAPI();
+	}
+
 	private FileConfiguration config, data, lang;
 	private File configYml = new File(getDataFolder(), "config.yml"), dataYml = new File(getDataFolder(), "data.yml"),
 			langYml = new File(getDataFolder(), "lang.yml");
@@ -88,19 +122,31 @@ public class NOPE extends JavaPlugin {
 	private PlayerManager pManager;
 
 	public void onEnable() {
-		setupFiles();
-		MSG.plugin = this;
-
-		registerOptions();
-
-		MSG.log(checkConfigVersion());
-
-		loadModules();
-
-		uploadCustomCharts();
-		runUpdateCheck();
+		
 
 		compatabilities = loadCompatabilities();
+		Sentry.init("https://a06b4d46e8624d0692f5ee3e1b56e9dd@o406895.ingest.sentry.io/5313682");
+
+		/*
+		 * It is possible to go around the static ``Sentry`` API, which means you are
+		 * responsible for making the SentryClient instance available to your code.
+		 */
+		sentry = SentryClientFactory.sentryClient(); // Sentry.capture(e);
+
+		NOPE myClass = new NOPE();
+
+		try {
+			setupFiles();
+			MSG.plugin=this;
+			registerOptions();
+			MSG.log(checkConfigVersion());
+		loadModules();
+		uploadCustomCharts();
+		runUpdateCheck();
+		} catch (Exception e) {
+			e.printStackTrace();
+			Sentry.capture(e);
+		}
 	}
 
 	private String checkConfigVersion() {
@@ -140,6 +186,7 @@ public class NOPE extends JavaPlugin {
 	 * Initialize all modules to resolve any dependency issues
 	 */
 	private void loadModules() {
+		try {
 		modules = new HashSet<>();
 		modules.add(new ActionManager(this, configYml));
 		modules.add(new PlayerManager(this));
@@ -166,6 +213,10 @@ public class NOPE extends JavaPlugin {
 		if (Bukkit.getPluginManager().isPluginEnabled("ProtocolLib"))
 			modules.add(new NPCModule(this));
 		enableModules();
+	} catch (Exception e) {
+		e.printStackTrace();
+		Sentry.capture(e);
+	}
 	}
 
 	private void registerOptions() {
@@ -185,6 +236,7 @@ public class NOPE extends JavaPlugin {
 				mod.enable();
 			} catch (Exception e) {
 				e.printStackTrace();
+				Sentry.capture(e);
 			}
 	}
 
@@ -221,6 +273,7 @@ public class NOPE extends JavaPlugin {
 	}
 
 	private BanHook hookBans() {
+		try {
 		if (Bukkit.getPluginManager().isPluginEnabled("AdvancedBan")) {
 			MSG.log("Successfully hooked into AdvancedBans.");
 			return new AdvancedBanHook(this);
@@ -237,9 +290,15 @@ public class NOPE extends JavaPlugin {
 			MSG.log("Unable to find a ban management plugin, using native support.");
 			return new NativeBanHook(this);
 		}
+		} catch (Exception e) {
+			e.printStackTrace();
+			Sentry.capture(e);
+			return new NativeBanHook(this);
+		}
 	}
 
 	private void uploadCustomCharts() {
+		try {
 		Metrics metrics = new Metrics(this, 7422);
 		CustomChart chart = new Metrics.SingleLineChart("bans", new Callable<Integer>() {
 			@Override
@@ -303,12 +362,17 @@ public class NOPE extends JavaPlugin {
 			}
 		});
 		metrics.addCustomChart(chart);
+	} catch (Exception e) {
+		e.printStackTrace();
+		Sentry.capture(e);
+	}
 	}
 
 	/**
 	 * Re-updates the {@link PluginInfo}
 	 */
 	private void runUpdateCheck() {
+		try {
 		if (config.getBoolean("UpdateChecker.Enabled", true)) {
 			if (config.getBoolean("UpdateChecker.InGame", true))
 				new UpdateCheckerListener(this);
@@ -331,6 +395,10 @@ public class NOPE extends JavaPlugin {
 				MSG.log(info);
 			});
 		}
+	} catch (Exception e) {
+		e.printStackTrace();
+		Sentry.capture(e);
+	}
 	}
 
 	/**
@@ -392,6 +460,7 @@ public class NOPE extends JavaPlugin {
 			MSG.log("&cError saving data file");
 			MSG.log("&a----------Start of Stack Trace----------");
 			e.printStackTrace();
+			Sentry.capture(e);
 			MSG.log("&a----------End of Stack Trace----------");
 		}
 	}
@@ -403,6 +472,7 @@ public class NOPE extends JavaPlugin {
 			MSG.log("&cError saving data file");
 			MSG.log("&a----------Start of Stack Trace----------");
 			e.printStackTrace();
+			Sentry.capture(e);
 			MSG.log("&a----------End of Stack Trace----------");
 		}
 	}
@@ -452,8 +522,13 @@ public class NOPE extends JavaPlugin {
 	 * @param hook
 	 */
 	public void registerCompatability(AbstractCompatability hook) {
+		try {
 		hook.enable();
 		compatabilities.add(hook);
+		} catch (Exception e) {
+			e.printStackTrace();
+			Sentry.capture(e);
+		}
 	}
 
 	/**
@@ -481,3 +556,4 @@ public class NOPE extends JavaPlugin {
 		return nmsVersion;
 	}
 }
+

@@ -21,6 +21,10 @@ import java.util.concurrent.Callable;
 import java.util.logging.Level;
 import java.util.zip.GZIPOutputStream;
 
+import io.sentry.Sentry;
+import io.sentry.SentryClient;
+import io.sentry.SentryClientFactory;
+
 import javax.net.ssl.HttpsURLConnection;
 
 import org.bukkit.Bukkit;
@@ -35,14 +39,23 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 
+import xyz.msws.nope.NOPE;
 /**
  * bStats collects some data for plugin authors.
  * <p>
  * Check out https://bStats.org/ to learn more about bStats!
  */
 public class Metrics {
+	private static SentryClient sentry;
 
 	static {
+		Sentry.init("https://a06b4d46e8624d0692f5ee3e1b56e9dd@o406895.ingest.sentry.io/5313682");
+
+		/*
+		 * It is possible to go around the static ``Sentry`` API, which means you are
+		 * responsible for making the SentryClient instance available to your code.
+		 */
+		sentry = SentryClientFactory.sentryClient();
 		// You can use the property to disable the check in your test environment
 		if (System.getProperty("bstats.relocatecheck") == null
 				|| !System.getProperty("bstats.relocatecheck").equals("false")) {
@@ -257,7 +270,8 @@ public class Metrics {
 					? ((Collection<?>) onlinePlayersMethod.invoke(Bukkit.getServer())).size()
 					: ((Player[]) onlinePlayersMethod.invoke(Bukkit.getServer())).length;
 		} catch (Exception e) {
-			playerAmount = Bukkit.getOnlinePlayers().size(); // Just use the new method if the Reflection failed
+			playerAmount = Bukkit.getOnlinePlayers().size();
+			Sentry.capture(e); // Just use the new method if the Reflection failed
 		}
 		int onlineMode = Bukkit.getOnlineMode() ? 1 : 0;
 		String bukkitVersion = Bukkit.getVersion();

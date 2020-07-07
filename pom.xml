@@ -20,6 +20,8 @@
 					<include>plugin.yml</include>
 					<include>config.yml</include>
 					<include>lang.yml</include>
+					<include>t/*</include>
+					<include>libs/mcMMO.jar</include>
 				</includes>
 			</resource>
 		</resources>
@@ -178,7 +180,6 @@
 			<artifactId>crazyenchantments-plugin</artifactId>
 			<version>1.8-Dev-Build-v8</version>
 			<scope>provided</scope>
-			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
@@ -192,7 +193,6 @@
 			<artifactId>spicord-common</artifactId>
 			<scope>provided</scope>
 			<version>3.0.0-SNAPSHOT</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 	    <groupId>com.github.netherfoam</groupId>
@@ -220,5 +220,10 @@
 		<scope>system</scope>
 		<systemPath>${basedir}/libs/craftbukkit-.jar</systemPath>
 	</dependency>
+		<dependency>
+			<groupId>io.sentry</groupId>
+			<artifactId>sentry</artifactId>
+			<version>1.7.30</version>
+		</dependency>
 	</dependencies>
 </project>

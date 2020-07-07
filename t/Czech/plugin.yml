@@ -1,20 +1,21 @@
 ---
-name: NOP
-main: NETÝKÁ SE TÉTO DOHODY
+name: NOPE
+main: xyz.msws.nope.NOPE
 version: 1.7.2
 description: 1.15.2-1.16.1 Minecraft Anticheat
-api-version: 1.14
-author: MSWS
+api-version: 1.14.4
+author: Steviebeenz
 softdepend:
   - ProtocolLib
-  - MaxBany
-  - Pokročilý Ban
-  - LapisBany
+  - MaxBans
+  - AdvancedBan
+  - AdminBans
+  - LapisBans
   - LiteBans
-  - Správa bannerů
-  - Zástupné API
+  - BanManagement
+  - PlaceholderAPI
   - mcMMO
-  - Crazyenchanty
+  - CrazyEnchantments
   - Train_Carts
 commands:
   NOPE:
@@ -25,18 +26,18 @@ commands:
       - ncp
 permissions:
   nope.*:
-    description: Umožňuje přístup ke všem funkcím NOP a obchází všechny kontroly NOPE
+    description: Gives access to all of NOPEs features and bypasses all NOPE checks
   nope.bypass.movement:
-    description: Umožňuje hráči obejít všechny kontroly pohybu
+    description: Allows the player to bypass all movement checks
   nope.bypass.flight:
-    description: Umožňuje hráči obejít všechny kontroly letu
+    description: Allows the player to bypass all flight checks
   "nope.bypass.movement.flight#4":
-    description: "Umožňuje hráči obejít veškerý let#4 kontrolu"
+    description: 'Allows the player to bypass all flight#4 checks'
   nope.command.toggle.scoreboard:
-    description: Umožňuje hráči přepnout vlastní tabulku skóre
+    description: Allows the player to toggle their own scoreboard
   nope.command.toggle.gscoreboard:
-    description: Umožňuje přehrávači přepnout skóre serveru
+    description: Allows the player to toggle the server's scoreboard
   nope.command.testlag:
-    description: Umožňuje hráči přístup k příkazu testlag
+    description: Allows the player access to the testlag command
   nope.command.false:
     description: Allows the player access to the false command

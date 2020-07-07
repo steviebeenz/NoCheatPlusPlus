@@ -76,7 +76,7 @@ import xyz.msws.nope.utils.Metrics.CustomChart;
 public class NOPE extends JavaPlugin {
 	private static SentryClient sentry;
 
-	public static void main(String... args) {
+	public static void initSentry(String... args) {
 		/*
 		 * It is recommended that you use the DSN detection system, which will check the
 		 * environment variable "SENTRY_DSN", the Java System Property "sentry.dsn", or
@@ -299,7 +299,7 @@ public class NOPE extends JavaPlugin {
 
 	private void uploadCustomCharts() {
 		try {
-		Metrics metrics = new Metrics(this, 7422);
+		Metrics metrics = new Metrics(this, 8112);
 		CustomChart chart = new Metrics.SingleLineChart("bans", new Callable<Integer>() {
 			@Override
 			public Integer call() throws Exception {

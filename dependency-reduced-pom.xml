@@ -15,8 +15,6 @@
           <include>plugin.yml</include>
           <include>config.yml</include>
           <include>lang.yml</include>
-          <include>t/*</include>
-          <include>libs/mcMMO.jar</include>
         </includes>
       </resource>
     </resources>
@@ -41,14 +39,6 @@
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.0.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -200,13 +190,6 @@
       <version>2.1.2</version>
       <scope>system</scope>
       <systemPath>${basedir}/libs/mcMMO.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>bukkit</artifactId>
-      <version>1.16.1-R0.1-SNAPSHOT</version>
-      <scope>system</scope>
-      <systemPath>${basedir}/libs/craftbukkit-.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>

@@ -3,18 +3,19 @@ name: NOPE
 main: xyz.msws.nope.NOPE
 version: 1.7.2
 description: 1.15.2-1.16.1 Minecraft Anticheat
-api-version: 1.14
-author: MSWS
+api-version: 1.14.4
+author: Steviebeenz
 softdepend:
   - ProtocolLib
-  - Maksbier
-  - Avansertutesteng
-  - Lapisbusser
+  - MaxBans
+  - AdvancedBan
+  - AdminBans
+  - LapisBans
   - LiteBans
-  - Banadministrasjon
+  - BanManagement
   - PlaceholderAPI
   - mcMMO
-  - KrazyFortryllelser
+  - CrazyEnchantments
   - Train_Carts
 commands:
   NOPE:
@@ -25,18 +26,18 @@ commands:
       - ncp
 permissions:
   nope.*:
-    description: Gir tilgang til alle NOPEs funksjoner og går gjennom alle NOPE kontroller
+    description: Gives access to all of NOPEs features and bypasses all NOPE checks
   nope.bypass.movement:
-    description: Lar spilleren overgå alle bevegelsessjekker
+    description: Allows the player to bypass all movement checks
   nope.bypass.flight:
-    description: Tillater spilleren å forbigå alle flysikringstiltak
+    description: Allows the player to bypass all flight checks
   "nope.bypass.movement.flight#4":
-    description: "Tillater spilleren å omgå alle flight#4 kontroller"
+    description: 'Allows the player to bypass all flight#4 checks'
   nope.command.toggle.scoreboard:
-    description: Tillater spilleren å veksle mellom sitt eget resultattavle
+    description: Allows the player to toggle their own scoreboard
   nope.command.toggle.gscoreboard:
-    description: Tillater spilleren å slå av og på serverens scoreboard
+    description: Allows the player to toggle the server's scoreboard
   nope.command.testlag:
-    description: Gir spilleren tilgang til testetter-kommandoen
+    description: Allows the player access to the testlag command
   nope.command.false:
     description: Allows the player access to the false command

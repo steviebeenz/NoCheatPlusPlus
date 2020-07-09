@@ -4,24 +4,24 @@ version: 1.7.2
 description: 1.15.2-1.16.1 Minecraft Anticheat
 author: Steviebeenz
 softdepend:
-- ProtocolLib
-- MaxBans
-- AdvancedBan
-- AdminBans
-- LapisBans
-- LiteBans
-- BanManagement
-- PlaceholderAPI
-- mcMMO
-- CrazyEnchantments
-- Train_Carts
+  - ProtocolLib
+  - MaxBans
+  - AdvancedBan
+  - AdminBans
+  - LapisBans
+  - LiteBans
+  - BanManagement
+  - PlaceholderAPI
+  - mcMMO
+  - CrazyEnchantments
+  - Train_Carts
 commands:
   NOPE:
     usage: /<command>
     aliases:
-    - ac
-    - anticheat
-    - ncp
+      - ac
+      - anticheat
+      - ncp
 permissions:
   nope.*:
     description: Gives access to all of NOPEs features and bypasses all NOPE checks

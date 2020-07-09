@@ -17,13 +17,13 @@ NOPE支持1.15。X **只是**。 默认情况下，NOPE将不会在 1.14 上加�
 YouTube视频展示NOPE可以在这里找到 [](https://www.youtube.com/watch?v=QNumBz-Phwg)。 此外，解释NOPE配置的视频是 [这里](https://www.youtube.com/watch?v=XVuXKsJEAkQ)。
 
 ## 支持
-请在此报告任何虚假标志、错误或建议。 可以通过加入 [我的 Discord](https://nope.msws.xyz/discord) 来提问一般问题。
+请在此报告任何虚假标志、错误或建议。 General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-NOPE API的基本指南是 [这里](https://github.com/MSWS/NOPE/wiki/API), 这里可以找到 javadoc [](http://docs.msws.xyz)。
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## 权限/命令
-权限和命令列表列出 [这里](https://github.com/MSWS/NOPE/wiki/Permissions)。
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## 特雷洛文
 NOPE 有一个Trello 棋盘，您可以查看已知的bug、功能和更新日志。 您可以在这里查看 trello 棋盘 [](https://nope.msws.xyz/trello)。

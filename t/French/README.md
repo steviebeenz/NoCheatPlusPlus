@@ -17,13 +17,13 @@ NOPE prend en charge 1.15.X **seulement**. Par défaut, NOPE ne se chargera pas 
 Une vidéo YouTube montrant NOPE peut être trouvée [ici](https://www.youtube.com/watch?v=QNumBz-Phwg). De plus, une vidéo expliquant la configuration du NOPE est [ici](https://www.youtube.com/watch?v=XVuXKsJEAkQ).
 
 ## Soutien
-Veuillez signaler tout faux drapeau, bogue ou suggestion ici. Les questions générales peuvent être posées en rejoignant [mon Discord](https://nope.msws.xyz/discord).
+Veuillez signaler tout faux drapeau, bogue ou suggestion ici. General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-Un guide de base sur l'API NOPE est [ici](https://github.com/MSWS/NOPE/wiki/API), et le javadoc peut être trouvé [ici](http://docs.msws.xyz).
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## Permissions / Commandes
-La liste des permissions et des commandes est listée [ici](https://github.com/MSWS/NOPE/wiki/Permissions).
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Trello
 NOPE a une carte Trello où vous pouvez voir les bogues, les fonctionnalités et les changements connus. Vous pouvez voir le tableau trello [ici](https://nope.msws.xyz/trello).

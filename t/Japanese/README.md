@@ -17,13 +17,13 @@ NOPEは1.15をサポートしています。X **のみ**. デフォルトでは�
 NOPEを紹介するYouTube動画はこちら [](https://www.youtube.com/watch?v=QNumBz-Phwg)をご覧ください。 また、NOPEの構成について解説する動画はこちら [](https://www.youtube.com/watch?v=XVuXKsJEAkQ)です。
 
 ## サポート
-ここに虚偽のフラグ、バグ、または提案を報告してください。 一般的な質問は、 [My Discord](https://nope.msws.xyz/discord) に参加することでできます。
+ここに虚偽のフラグ、バグ、または提案を報告してください。 General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-NOPEのAPIの基本的なガイドはこちら [](https://github.com/MSWS/NOPE/wiki/API)で、javadocは [こちら](http://docs.msws.xyz)にあります。
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## 権限 / コマンド
-権限とコマンドの一覧はこちら [](https://github.com/MSWS/NOPE/wiki/Permissions).
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Trello
 NOPEには、既知のバグ、機能、変更履歴を見ることができるTrelloボードがあります。 トレッロボード [はこちら](https://nope.msws.xyz/trello)からご覧いただけます。

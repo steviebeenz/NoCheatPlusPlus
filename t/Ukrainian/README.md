@@ -17,13 +17,13 @@ NOPE підтримує 1.15.X **тільки**. По замовченню NOPE 
 Відеошоу на YouTube можна знайти [тут](https://www.youtube.com/watch?v=QNumBz-Phwg). Додатково відео, що пояснює конфігурацію NOPE [тут](https://www.youtube.com/watch?v=XVuXKsJEAkQ).
 
 ## Підтримка
-Будь ласка, повідомляйте тут про будь-які неправдиві помилки, помилки або пропозиції. Загальні питання можна запитати, приєднавшись до [мого Discord](https://nope.msws.xyz/discord).
+Будь ласка, повідомляйте тут про будь-які неправдиві помилки, помилки або пропозиції. General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-A basic guide on NOPE's API is [here](https://github.com/MSWS/NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## Дозволи/Команди
-Список дозволів і команд перераховано [тут](https://github.com/MSWS/NOPE/wiki/Permissions).
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Трелло
 NOPE має раду Trello, де ви бачите відомі помилки, функції та зміни Ви можете переглянути дошку [тут](https://nope.msws.xyz/trello).

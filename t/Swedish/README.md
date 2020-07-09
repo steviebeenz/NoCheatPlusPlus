@@ -17,13 +17,13 @@ NOPE stöder 1.15.X **bara**. Som standard laddas NOPE inte på 1.14- servrar. S
 En YouTube-video visar NOPE finns [här](https://www.youtube.com/watch?v=QNumBz-Phwg). Dessutom är en video som förklarar konfigurationen av NOPE [här](https://www.youtube.com/watch?v=XVuXKsJEAkQ).
 
 ## Stöd
-Rapportera eventuella falska flaggor, buggar eller förslag här. Allmänna frågor kan ställas genom att gå med i [min Discord](https://nope.msws.xyz/discord).
+Rapportera eventuella falska flaggor, buggar eller förslag här. General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-En grundläggande guide på NOPEs API är [här](https://github.com/MSWS/NOPE/wiki/API), och javadoc finns [här](http://docs.msws.xyz).
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## Behörigheter / Kommandon
-Listan över behörigheter och kommandon listas [här](https://github.com/MSWS/NOPE/wiki/Permissions).
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Trello
 NOPE har ett Trello-kort där du kan se kända buggar, funktioner och ändringsloggar. Du kan se trello tavlan [här](https://nope.msws.xyz/trello).

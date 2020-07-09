@@ -17,13 +17,13 @@ NOPE suportă 1.15.X **numai**. În mod implicit, NOPE nu se va încărca pe ser
 Un video YouTube care arată NOPE poate fi găsit [aici](https://www.youtube.com/watch?v=QNumBz-Phwg). În plus, un film care explică configurația NOPE este [aici](https://www.youtube.com/watch?v=XVuXKsJEAkQ).
 
 ## Suport
-Vă rugăm să raportați aici orice steag, erori sau sugestii false. Întrebări generale pot fi puse alăturându-se [Discord meu](https://nope.msws.xyz/discord).
+Vă rugăm să raportați aici orice steag, erori sau sugestii false. General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-Un ghid de bază pe API-ul NOPE-ului este [aici](https://github.com/MSWS/NOPE/wiki/API), iar javadoc-ul poate fi găsit [aici](http://docs.msws.xyz).
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## Permisiuni / Comenzi
-Lista de permisiuni şi comenzi este listat [aici](https://github.com/MSWS/NOPE/wiki/Permissions).
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Trello
 NOPE are o secţiune Trello unde puteţi vizualiza erorile, caracteristicile şi transformările cunoscute. Puteţi vedea secţiunea [aici](https://nope.msws.xyz/trello).

@@ -17,13 +17,13 @@ NOPE understøtter 1.15.X **only**. Som standard vil NOPE ikke laste på 1.14- s
 En YouTube video viser NOPE kan du finne [her](https://www.youtube.com/watch?v=QNumBz-Phwg). I tillegg er en video som forklarer konfigurasjonen av NOPE [her](https://www.youtube.com/watch?v=XVuXKsJEAkQ).
 
 ## Brukerstøtte
-Vennligst rapporter eventuelle falske flagg, feil eller forslag her. Generelle spørsmål kan stilles ved å bli med [min Discord](https://nope.msws.xyz/discord).
+Vennligst rapporter eventuelle falske flagg, feil eller forslag her. General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-En grunnleggende guide på NOPEs API er [her](https://github.com/MSWS/NOPE/wiki/API), og javadoc finner du [her](http://docs.msws.xyz).
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## Rettigheter / Kommandoer
-Liste over tillatelser og kommandoer vises [her](https://github.com/MSWS/NOPE/wiki/Permissions).
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Trello
 NOPE har en Trello-tavle hvor du kan se kjente feil, funksjoner og endringslogger. Du kan se trelasebordet [her](https://nope.msws.xyz/trello).

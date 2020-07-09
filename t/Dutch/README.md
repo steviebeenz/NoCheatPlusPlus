@@ -17,13 +17,13 @@ NOPE ondersteunt 1.15.X **alleen**. Standaard zal NOPE niet laden op 1.14- serve
 Een YouTube-video met NOPE is te vinden [hier](https://www.youtube.com/watch?v=QNumBz-Phwg). Daarnaast is een video die de configuratie van NOPE uitlegt [hier](https://www.youtube.com/watch?v=XVuXKsJEAkQ).
 
 ## Ondersteuning
-Rapporteer hier valse meldingen, fouten of suggesties. Algemene vragen kunnen worden gesteld door lid te worden van [mijn Discord](https://nope.msws.xyz/discord).
+Rapporteer hier valse meldingen, fouten of suggesties. General questions can be asked by joining [MSWS's Discord](https://nope.msws.xyz/discord).
 
 ## API
-Een basishandleiding voor de NOPE's API is [hier](https://github.com/MSWS/NOPE/wiki/API), en de javadoc kan [hier gevonden worden](http://docs.msws.xyz).
+A basic guide on NOPE's API is \[here\](https://github.com/STEVIEBEENZ /NOPE/wiki/API), and the javadoc can be found [here](http://docs.msws.xyz).
 
 ## Machtigingen / Opdrachten
-De lijst van rechten en commando's wordt [hier](https://github.com/MSWS/NOPE/wiki/Permissions) vermeld.
+The list of permissions and commands are listed [here](https://github.com/STEVIEBEENZ/NOPE/wiki/Permissions).
 
 ## Trello
 NOPE heeft een Trello bord waar je bekende bugs, functies en logboeken kunt bekijken. Je kunt het trello bord [hier](https://nope.msws.xyz/trello) bekijken.
